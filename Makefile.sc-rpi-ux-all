@@ -34,7 +34,7 @@ endif
 # $(info MARCH=$(MARCH))
 # $(info MTUNE=$(MTUNE))
 
-OPTS = -DLINKALL -DRESAMPLE -DDSD
+OPTS = -DLINKALL -DRESAMPLE -DDSD -DIR -DGPIO -DRPI -DUSE_SSL 
 CFLAGS = -Wall -fPIC -O3 $(MARCH) $(MTUNE) $(TUNEOPTS) -pipe
 
 include Makefile
